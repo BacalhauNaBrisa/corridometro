@@ -3,9 +3,12 @@ from datetime import timedelta
 
 st.set_page_config(page_title="Corridômetro", layout="centered")
 
+# Add logo
+st.image("https://github.com/BacalhauNaBrisa/corridometro/raw/main/assets/logo.png", use_column_width=True)
 st.title("🏃 Corridômetro")
 
-tab1, tab2, tab3 = st.tabs(["🕒 Speed", "📏 Distance", "⏱️ Time"])
+# Updated tab names in Portuguese
+tab1, tab2, tab3 = st.tabs(["🕒 Velocidade", "📏 Distância", "⏱️ Tempo"])
 
 def parse_time_input(time_str):
     try:
@@ -37,7 +40,7 @@ def convert_speed_to_mps(speed, unit):
         return speed * 0.44704
     elif unit == "min/km":
         return 1000 / (speed * 60)
-        
+
 def convert_mps_to_speed(mps, unit):
     if unit == "km/h":
         return mps * 3.6
@@ -46,7 +49,7 @@ def convert_mps_to_speed(mps, unit):
     elif unit == "min/km":
         return 1000 / (mps * 60)
 
-# SPEED TAB
+# Velocidade
 with tab1:
     st.subheader("Calcular Velocidade")
     col1, col2 = st.columns(2)
@@ -73,7 +76,7 @@ with tab1:
     elif time_str:
         st.error("Formato de tempo inválido. Use hh:mm:ss")
 
-# DISTANCE TAB
+# Distância
 with tab2:
     st.subheader("Calcular Distância")
     col1, col2 = st.columns(2)
@@ -98,7 +101,7 @@ with tab2:
     elif time_str:
         st.error("Formato de tempo inválido. Use hh:mm:ss")
 
-# TIME TAB
+# Tempo
 with tab3:
     st.subheader("Calcular Tempo")
     col1, col2 = st.columns(2)
