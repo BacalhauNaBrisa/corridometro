@@ -4,7 +4,7 @@ from datetime import timedelta
 st.set_page_config(page_title="Corridômetro", layout="centered")
 
 # Add logo
-st.image("https://github.com/BacalhauNaBrisa/corridometro/raw/main/assets/logo.png", use_column_width=True)
+st.image("https://github.com/BacalhauNaBrisa/corridometro/raw/main/assets/logo.png", use_container_width=True)
 st.title("🏃 Corridômetro")
 
 # Updated tab names in Portuguese
