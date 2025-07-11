@@ -6,7 +6,7 @@
 
 ## 🔗 Acesse o app
 
-Acesse online: [https://corridometro.streamlit.app/](https://corridometro.streamlit.app/)
+Acesse online: [https://corridometro.bacalhaunabrisa.com/](https://corridometro.bacalhaunabrisa.com/)
 
 ---
 
